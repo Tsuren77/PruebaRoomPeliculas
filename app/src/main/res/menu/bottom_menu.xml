@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ico_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ico_note_add"
+        android:title="Add" />
+    <item
+        android:id="@+id/action_filtrado"
+        android:icon="@drawable/ico_list_alt"
+        android:title="Filtrado" />
+
+</menu>

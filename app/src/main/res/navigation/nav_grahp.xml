@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grahp"
+    app:startDestination="@id/action_home">
+
+    <fragment
+        android:id="@+id/action_home"
+        android:name="edu.dam.pruebaroompeliculas.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_action_home_to_actualizarDialogFragment"
+            app:destination="@id/actualizarDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/action_add"
+        android:name="edu.dam.pruebaroompeliculas.ui.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/action_filtrado"
+        android:name="edu.dam.pruebaroompeliculas.ui.FiltradoFragment"
+        android:label="fragment_filtrado"
+        tools:layout="@layout/fragment_filtrado" />
+    <dialog
+        android:id="@+id/actualizarDialogFragment"
+        android:name="edu.dam.pruebaroompeliculas.ui.ActualizarDialogFragment"
+        android:label="ActualizarDialogFragment" >
+        <argument
+            android:name="identificador"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_actualizarDialogFragment_to_action_home"
+            app:destination="@id/action_home" />
+    </dialog>
+</navigation>
