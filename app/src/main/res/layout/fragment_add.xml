@@ -166,6 +166,7 @@
             android:layout_marginStart="151dp"
             android:numStars="5"
             app:layout_constraintEnd_toEndOf="parent"
+            android:progressTint="@color/oro"
             app:layout_constraintStart_toStartOf="@+id/imageCalendar"
             app:layout_constraintTop_toBottomOf="@+id/textViewFecha" />
 

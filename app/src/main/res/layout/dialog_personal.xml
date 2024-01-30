@@ -2,8 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:padding="18dp">
 
     <TextView
@@ -11,44 +11,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:text="Elija una opción"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:text="Elija una opción"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="8dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textMensaje"
-        app:srcCompat="@drawable/icon_7187936" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonEliminar"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/secundario"
         android:text="Eliminar"
         app:icon="@drawable/ico_delete_24"
-        android:backgroundTint="@color/secundario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/textMensaje" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonModificar"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        app:icon="@drawable/ico_update_24"
         android:backgroundTint="@color/secundario"
         android:text="Modificar"
+        app:icon="@drawable/ico_update_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonEliminar" />

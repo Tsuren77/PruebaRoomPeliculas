@@ -4,14 +4,14 @@
     <item
         android:id="@+id/action_home"
         android:icon="@drawable/ico_home_24"
-        android:title="Home" />
+        android:title="Inicio" />
     <item
         android:id="@+id/action_add"
         android:icon="@drawable/ico_note_add"
-        android:title="Add" />
+        android:title="Añadir" />
     <item
         android:id="@+id/action_filtrado"
         android:icon="@drawable/ico_list_alt"
-        android:title="Filtrado" />
+        android:title="Filtrar" />
 
 </menu>
