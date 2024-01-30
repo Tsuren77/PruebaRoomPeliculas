@@ -79,6 +79,7 @@ class ActualizarDialogFragment: DialogFragment() , DialogInterface.OnShowListene
                 pelicula?.fecha_nota = binding?.textViewFecha?.text.toString().trim()
                 pelicula?.fecha_actual = binding?.textActual?.text.toString().trim()
                 pelicula?.estado = estado
+                pelicula?.valoracion = binding?.valoracionEstrellas?.rating ?: 0.0f //ESTO SE AÑADIO
 
                  //metodo para actualizar el registro
                 //hilo secundario para actualizar
@@ -134,6 +135,7 @@ class ActualizarDialogFragment: DialogFragment() , DialogInterface.OnShowListene
            this.editDescripcion.setText(pelicula.descripcion)
            this.textActual.setText(pelicula.fecha_actual)
            this.textViewFecha.setText(pelicula.fecha_nota)
+          // this.valoracionEstrellas.rating = pelicula.valoracion //SE AÑADIO para valoracion
         }
 
     }

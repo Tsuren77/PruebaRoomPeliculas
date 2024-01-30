@@ -16,6 +16,7 @@ data class Pelicula(
     var descripcion: String ="",
     var fecha_nota: String = "",
     var estado: Boolean = false,
-    var imagen: String
+    var imagen: String,
+    var valoracion: Float  //para el raiting
 ) : Parcelable
 // tecla Alt + Insertar o Code-> Generate solo marcar el id

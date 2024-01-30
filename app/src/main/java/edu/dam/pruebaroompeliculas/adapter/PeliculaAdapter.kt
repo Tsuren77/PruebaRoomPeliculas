@@ -100,6 +100,10 @@ class PeliculaAdapter (private var peliculaList: MutableList<Pelicula>, private 
                 binding.imgNota.visibility = View.GONE
             }
 
+            binding.valoracionEstrellas.rating = pelicula.valoracion   //SE AÑADIO ESTO
+
+
+
 
         }
 

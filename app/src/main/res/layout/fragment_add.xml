@@ -74,8 +74,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
-            android:text="@string/Btn_Calendario"
             android:backgroundTint="@color/secundario"
+            android:text="@string/Btn_Calendario"
             app:icon="@drawable/ico_calendar_today_24"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputDescripcion" />
@@ -158,6 +158,16 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imagePelicula" />
+
+        <RatingBar
+            android:id="@+id/valoracionEstrellas"
+            android:layout_width="244dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="151dp"
+            android:numStars="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageCalendar"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFecha" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

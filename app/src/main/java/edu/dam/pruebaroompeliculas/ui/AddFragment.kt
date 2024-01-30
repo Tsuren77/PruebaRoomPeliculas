@@ -97,8 +97,8 @@ class AddFragment : Fragment() {
                         descripcion = binding.editDescripcion.text.toString().trim(),
                         fecha_nota = binding.textViewFecha.text.toString().trim(),
                         estado = false,
-                        imagen = selectPath
-
+                        imagen = selectPath,
+                        valoracion = binding.valoracionEstrellas.rating //ESTO SE AÑADIO
                     )
                     //hilo secundario para añadir
                     val queue = LinkedBlockingQueue<Long>()
